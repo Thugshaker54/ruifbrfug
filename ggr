@@ -149,6 +149,11 @@ vaulttime.TextColor3 = Color3.fromRGB(255, 255, 255)
 vaulttime.TextScaled = true
 vaulttime.TextSize = 14.000
 vaulttime.TextWrapped = true
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "o" then
+       cbt = false         
+ end
+end)
 
 Heal.MouseButton1Click:Connect(function(h)
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216, 382, -93)
