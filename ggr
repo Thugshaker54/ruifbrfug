@@ -15,46 +15,10 @@ local Illegal = Instance.new("TextButton")
 local bank = Instance.new("TextButton")
 local hbe = Instance.new("TextButton")
 local farm = Instance.new("TextButton")
-local screenui = Instance.new("ScreenGui")
-local frameloll = Instance.new("Frame")
-local suckaddick = Instance.new("TextLabel")
-local dick = Instance.new("UICorner")
-local uglyahh = Instance.new("UICorner")
+local time = Instance.new("TextLabel")
 local amogus = true
 
 --Properties:
-
-screenui.Name = "screenui"
-screenui.Parent = game.CoreGui
-screenui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-frameloll.Name = "frameloll"
-frameloll.Parent = screenui
-frameloll.BackgroundColor3 = Color3.fromRGB(124, 126, 129)
-frameloll.Position = UDim2.new(0.253699124, 0, 0, 0)
-frameloll.Size = UDim2.new(0, 122, 0, 37)
-frameloll.Active = true
-
-suckaddick.Name = "suckaddick"
-suckaddick.Parent = frameloll
-suckaddick.BackgroundColor3 = Color3.fromRGB(124, 126, 129)
-suckaddick.Position = UDim2.new(0, 0, 0.0263150875, 0)
-suckaddick.Size = UDim2.new(0, 122, 0, 37)
-suckaddick.Font = Enum.Font.SourceSansBold
-suckaddick.TextColor3 = Color3.fromRGB(255, 255, 255)
-suckaddick.TextSize = 53.000
-while amogus == true do
-	wait()
-	suckaddick.Text = game.Workspace.BankSystem.BankRobbing.Information.Time.Value
-end
-
-dick.CornerRadius = UDim.new(0, 4)
-dick.Name = "dick"
-dick.Parent = suckaddick
-
-uglyahh.CornerRadius = UDim.new(0, 4)
-uglyahh.Name = "uglyahh"
-uglyahh.Parent = frameloll
 
 
 
@@ -77,7 +41,7 @@ CA.BackgroundTransparency = 0.950
 CA.BorderSizePixel = 0
 CA.Size = UDim2.new(0, 57, 0, 22)
 CA.Font = Enum.Font.SourceSansBold
-CA.Text = "CA Weapons"
+CA.Text = "IY"
 CA.TextColor3 = Color3.fromRGB(255, 255, 255)
 CA.TextScaled = true
 CA.TextSize = 12.000
@@ -99,6 +63,18 @@ GOC.TextColor3 = Color3.fromRGB(255, 255, 255)
 GOC.TextScaled = true
 GOC.TextSize = 15.000
 GOC.TextWrapped = true
+
+time.Name = "time"
+time.Parent = Frame
+time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+time.BorderSizePixel = 0
+time.Position = UDim2.new(1, 0, 0, 0)
+time.Size = UDim2.new(0, 99, 0, 32)
+time.Font = Enum.Font.SourceSansBold
+time.Text = "NIl"
+time.TextColor3 = Color3.fromRGB(0, 0, 0)
+time.TextSize = 34.000
+time.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 Heal.Name = "Heal"
 Heal.Parent = Frame
@@ -194,7 +170,7 @@ spwn.MouseButton1Click:Connect(function(r)
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-173, 370, 77)
 end)
 CA.MouseButton1Click:Connect(function(p)
-	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1307, 370, 627)
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 Illegal.MouseButton1Click:Connect(function(v)
     pl = game.Players.LocalPlayer.Character.HumanoidRootPart
@@ -205,12 +181,13 @@ bank.MouseButton1Click:Connect(function(k)
 end)
 hbe.MouseButton1Click:Connect(function(n)
    loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/shit%20script%20pack/CheatX'))()
+end) 
+
+farm.MouseButton1Click:Connect(function(amongus)
+  loadstring(game:HttpGet('https://pastebin.com/raw/xKKtnevv'))()
 end)
-antiadmin.MouseButton1Click:Connect(function(m)
-     game.StarterGui:SetCore("SendNotification", {
-        Title = "Anti admin is currently not functional, sorry!"
-        Text = ""
-        Duration = "10"
-        Button1 = "Close"
-})    
-end)
+while amogus == true do
+  time.Text = game.Workspace.BankSystem.BankRobbing.Information.Time
+end
+
+  
