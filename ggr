@@ -166,7 +166,7 @@ farm.TextWrapped = true
 Heal.MouseButton1Click:Connect(function(h)
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216, 382, -93)
 end)
-GOC.Button1Click:Connect(function(c)
+GOC.MouseButton1Click:Connect(function(c)
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1, 370, 192)
 end)
 
