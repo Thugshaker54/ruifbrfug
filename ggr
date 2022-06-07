@@ -45,7 +45,7 @@ suckaddick.TextColor3 = Color3.fromRGB(255, 255, 255)
 suckaddick.TextSize = 53.000
 while amogus == true do
 	wait()
-	suckaddick.Text = game.Workspace.BankSystem.BankRobbing.Information.Time
+	suckaddick.Text = game.Workspace.BankSystem.BankRobbing.Information.Time.Value
 end
 
 dick.CornerRadius = UDim.new(0, 4)
