@@ -75,6 +75,10 @@ time.Text = "NIl"
 time.TextColor3 = Color3.fromRGB(0, 0, 0)
 time.TextSize = 34.000
 time.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+while amogus == true do
+  wait()
+  time.Text = game.Workspace.BankSystem.BankRobbing.Information.Time.Value
+end
 
 Heal.Name = "Heal"
 Heal.Parent = Frame
@@ -186,8 +190,6 @@ end)
 farm.MouseButton1Click:Connect(function(amongus)
   loadstring(game:HttpGet('https://pastebin.com/raw/xKKtnevv'))()
 end)
-while amogus == true do
-  time.Text = game.Workspace.BankSystem.BankRobbing.Information.Time
-end
+
 
   
