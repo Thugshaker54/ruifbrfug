@@ -151,7 +151,7 @@ vaulttime.TextSize = 14.000
 vaulttime.TextWrapped = true
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
  if key == "o" then
-       print("Fuck the mods")      
+       cbt = false  
  end
 end)
 
