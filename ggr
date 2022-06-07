@@ -2,166 +2,153 @@
 -- Version: 3.2
 
 -- Instances:
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local CA = Instance.new("TextButton")
 local UIGradient = Instance.new("UIGradient")
 local GOC = Instance.new("TextButton")
 local Heal = Instance.new("TextButton")
 local spwn = Instance.new("TextButton")
 local Illegal = Instance.new("TextButton")
+local CA = Instance.new("TextButton")
 local bank = Instance.new("TextButton")
 local hbe = Instance.new("TextButton")
 local farm = Instance.new("TextButton")
-local time = Instance.new("TextLabel")
+local vaulttime = Instance.new("TextLabel")
 local amogus = true
-
 --Properties:
-
-
-
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderSizePixel = 0
-Frame.Size = UDim2.new(0, 122, 0, 102)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+Frame.Active = true
 
 UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = Frame
 
-CA.Name = "CA"
-CA.Parent = Frame
-CA.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-CA.BackgroundTransparency = 0.950
-CA.BorderSizePixel = 0
-CA.Size = UDim2.new(0, 57, 0, 22)
-CA.Font = Enum.Font.SourceSansBold
-CA.Text = "IY"
-CA.TextColor3 = Color3.fromRGB(255, 255, 255)
-CA.TextScaled = true
-CA.TextSize = 12.000
-CA.TextWrapped = true
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 134, 134)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(75, 75, 75))}
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(107, 107, 107)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(131, 132, 134))}
 UIGradient.Parent = Frame
 
 GOC.Name = "GOC"
 GOC.Parent = Frame
-GOC.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-GOC.BackgroundTransparency = 0.950
+GOC.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
 GOC.BorderSizePixel = 0
-GOC.Position = UDim2.new(0, 0, 0.215686277, 0)
-GOC.Size = UDim2.new(0, 57, 0, 31)
+GOC.Position = UDim2.new(-0.0900000036, 0, 0, 0)
+GOC.Size = UDim2.new(0, 59, 0, 26)
 GOC.Font = Enum.Font.SourceSansBold
 GOC.Text = "Goc"
-GOC.TextColor3 = Color3.fromRGB(255, 255, 255)
+GOC.TextColor3 = Color3.fromRGB(231, 231, 231)
 GOC.TextScaled = true
-GOC.TextSize = 15.000
+GOC.TextSize = 28.000
 GOC.TextWrapped = true
-
-time.Name = "time"
-time.Parent = Frame
-time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-time.BorderSizePixel = 0
-time.Position = UDim2.new(1, 0, 0, 0)
-time.Size = UDim2.new(0, 99, 0, 32)
-time.Font = Enum.Font.SourceSansBold
-time.Text = "NIl"
-time.TextColor3 = Color3.fromRGB(0, 0, 0)
-time.TextSize = 34.000
-time.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-while amogus == true do
-  wait()
-  time.Text = game.Workspace.BankSystem.BankRobbing.Information.Time.Value
-end
 
 Heal.Name = "Heal"
 Heal.Parent = Frame
-Heal.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-Heal.BackgroundTransparency = 0.950
+Heal.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
 Heal.BorderSizePixel = 0
-Heal.Position = UDim2.new(0, 0, 0.519607842, 0)
-Heal.Size = UDim2.new(0, 57, 0, 25)
+Heal.Position = UDim2.new(0.409999996, 0, 0, 0)
+Heal.Size = UDim2.new(0, 59, 0, 26)
 Heal.Font = Enum.Font.SourceSansBold
 Heal.Text = "Heals"
-Heal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Heal.TextColor3 = Color3.fromRGB(231, 231, 231)
 Heal.TextScaled = true
-Heal.TextSize = 15.000
+Heal.TextSize = 25.000
 Heal.TextWrapped = true
 
 spwn.Name = "spwn"
 spwn.Parent = Frame
-spwn.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-spwn.BackgroundTransparency = 0.950
+spwn.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
 spwn.BorderSizePixel = 0
-spwn.Position = UDim2.new(0, 0, 0.778031588, 0)
-spwn.Size = UDim2.new(0, 57, 0, 22)
+spwn.Position = UDim2.new(0, 0, 0.25999999, 0)
+spwn.Size = UDim2.new(0, 50, 0, 26)
 spwn.Font = Enum.Font.SourceSansBold
 spwn.Text = "CarSpawn"
-spwn.TextColor3 = Color3.fromRGB(255, 255, 255)
+spwn.TextColor3 = Color3.fromRGB(231, 231, 231)
 spwn.TextScaled = true
-spwn.TextSize = 15.000
+spwn.TextSize = 13.000
 spwn.TextWrapped = true
 
 Illegal.Name = "Illegal"
 Illegal.Parent = Frame
-Illegal.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-Illegal.BackgroundTransparency = 0.950
-Illegal.Position = UDim2.new(0.426229507, 0, 0, 0)
-Illegal.Size = UDim2.new(0, 75, 0, 22)
+Illegal.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+Illegal.BorderSizePixel = 0
+Illegal.Position = UDim2.new(0.5, 0, 0.25999999, 0)
+Illegal.Size = UDim2.new(0, 50, 0, 26)
 Illegal.Font = Enum.Font.SourceSansBold
 Illegal.Text = "Dealer"
-Illegal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Illegal.TextColor3 = Color3.fromRGB(231, 231, 231)
 Illegal.TextScaled = true
-Illegal.TextSize = 14.000
+Illegal.TextSize = 20.000
 Illegal.TextWrapped = true
+
+CA.Name = "CA"
+CA.Parent = Frame
+CA.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+CA.BorderSizePixel = 0
+CA.Position = UDim2.new(0, 0, 0.519999981, 0)
+CA.Size = UDim2.new(0, 50, 0, 26)
+CA.Font = Enum.Font.SourceSansBold
+CA.Text = "IY"
+CA.TextColor3 = Color3.fromRGB(231, 231, 231)
+CA.TextScaled = true
+CA.TextSize = 20.000
+CA.TextWrapped = true
 
 bank.Name = "bank"
 bank.Parent = Frame
-bank.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-bank.BackgroundTransparency = 0.950
+bank.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
 bank.BorderSizePixel = 0
-bank.Position = UDim2.new(0.467213124, 0, 0.215686277, 0)
-bank.Size = UDim2.new(0, 65, 0, 31)
+bank.Position = UDim2.new(0.5, 0, 0.519999981, 0)
+bank.Size = UDim2.new(0, 50, 0, 26)
 bank.Font = Enum.Font.SourceSansBold
 bank.Text = "Bank"
-bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+bank.TextColor3 = Color3.fromRGB(231, 231, 231)
 bank.TextScaled = true
-bank.TextSize = 15.000
+bank.TextSize = 20.000
 bank.TextWrapped = true
 
 hbe.Name = "hbe"
 hbe.Parent = Frame
-hbe.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-hbe.BackgroundTransparency = 0.950
+hbe.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
 hbe.BorderSizePixel = 0
-hbe.Position = UDim2.new(0.467213124, 0, 0.519607842, 0)
-hbe.Size = UDim2.new(0, 57, 0, 25)
+hbe.Position = UDim2.new(0, 0, 0.74000001, 0)
+hbe.Size = UDim2.new(0, 50, 0, 26)
 hbe.Font = Enum.Font.SourceSansBold
 hbe.Text = "Hitbox"
-hbe.TextColor3 = Color3.fromRGB(255, 255, 255)
+hbe.TextColor3 = Color3.fromRGB(231, 231, 231)
 hbe.TextScaled = true
-hbe.TextSize = 15.000
+hbe.TextSize = 20.000
 hbe.TextWrapped = true
 
 farm.Name = "farm"
 farm.Parent = Frame
-farm.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
-farm.BackgroundTransparency = 0.950
+farm.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
 farm.BorderSizePixel = 0
-farm.Position = UDim2.new(0.5, 0, 0.778031588, 0)
-farm.Size = UDim2.new(0, 57, 0, 22)
+farm.Position = UDim2.new(0.5, 0, 0.74000001, 0)
+farm.Size = UDim2.new(0, 50, 0, 26)
 farm.Font = Enum.Font.SourceSansBold
 farm.Text = "AutoFarm"
-farm.TextColor3 = Color3.fromRGB(255, 255, 255)
+farm.TextColor3 = Color3.fromRGB(231, 231, 231)
 farm.TextScaled = true
-farm.TextSize = 15.000
+farm.TextSize = 20.000
 farm.TextWrapped = true
+
+vaulttime.Name = "vaulttime"
+vaulttime.Parent = Frame
+vaulttime.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+vaulttime.BorderSizePixel = 0
+vaulttime.Position = UDim2.new(1, 0, 0, 0)
+vaulttime.Size = UDim2.new(0, 86, 0, 34)
+vaulttime.Font = Enum.Font.SourceSansBold
+vaulttime.Text = "NIL"
+vaulttime.TextColor3 = Color3.fromRGB(255, 255, 255)
+vaulttime.TextScaled = true
+vaulttime.TextSize = 14.000
+vaulttime.TextWrapped = true
 
 Heal.MouseButton1Click:Connect(function(h)
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216, 382, -93)
@@ -177,19 +164,21 @@ CA.MouseButton1Click:Connect(function(p)
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 Illegal.MouseButton1Click:Connect(function(v)
-    pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-    pl.CFrame = game.Workspace.IllegalDealership.IllegalDealership.PartPointer.CFrame
+	pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	pl.CFrame = game.Workspace.IllegalDealership.IllegalDealership.PartPointer.CFrame
 end)
 bank.MouseButton1Click:Connect(function(k)
-   game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-803, 394, 520)    
+	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-803, 394, 520)    
 end)
 hbe.MouseButton1Click:Connect(function(n)
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/shit%20script%20pack/CheatX'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/shit%20script%20pack/CheatX'))()
 end) 
 
 farm.MouseButton1Click:Connect(function(amongus)
-  loadstring(game:HttpGet('https://pastebin.com/raw/xKKtnevv'))()
+	loadstring(game:HttpGet('https://pastebin.com/raw/xKKtnevv'))()
 end)
 
-
-  
+while amogus == true do
+	wait()
+	vaulttime.Text = game.Workspace.BankSystem.BankRobbing.Information.Time.Value
+end
